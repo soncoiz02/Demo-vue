@@ -1,0 +1,169 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: "Sen", sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .cap1,
+  .cap3,
+  .body1,
+  .body2,
+  .label,
+  .display {
+    color: #232536;
+  }
+
+  h1 {
+    @apply font-bold;
+    @apply text-[48px];
+    @apply leading-[64px];
+  }
+
+  h2,
+  .h2 {
+    @apply font-bold;
+    @apply text-[36px];
+    @apply leading-[48px];
+  }
+
+  h3,
+  .h3 {
+    @apply font-bold;
+    @apply text-[28px];
+    @apply leading-[36px];
+  }
+
+  h4 {
+    @apply font-bold;
+    @apply text-[24px];
+    @apply leading-[32px];
+  }
+
+  h5 {
+    @apply font-bold;
+    @apply text-[20px];
+    @apply leading-[32px];
+  }
+
+  h6 {
+    @apply font-bold;
+    @apply text-[16px];
+    @apply leading-[24px];
+  }
+
+  .display {
+    @apply font-bold;
+    @apply text-[56px];
+    @apply leading-[64px];
+  }
+
+  .body1 {
+    @apply font-normal;
+    @apply text-[16px];
+    @apply leading-[28px];
+  }
+
+  .body2 {
+    @apply font-normal;
+    @apply text-[14px];
+    @apply leading-[20px];
+  }
+
+  .label {
+    @apply text-[14px];
+    @apply leading-[20px];
+    @apply font-medium;
+  }
+
+  .cap1 {
+    @apply font-semibold;
+    @apply text-[16px];
+    @apply leading-[20px];
+    @apply tracking-[3px];
+  }
+
+  .cap3 {
+    @apply font-medium;
+    @apply text-[16px];
+    @apply leading-[20px];
+    @apply tracking-[3px];
+  }
+
+  .text-black {
+    color: #232536;
+  }
+
+  .bg-black {
+    background: #232536;
+  }
+
+  .text-yellow {
+    color: #ffd050;
+  }
+
+  .bg-yellow {
+    background: #ffd050;
+  }
+
+  .text-purple {
+    color: #592ea9;
+  }
+
+  .bg-purple {
+    background: #592ea9;
+  }
+
+  .text-dark-gray {
+    color: #4c4c4c;
+  }
+
+  .bg-dark-gray {
+    background: #4c4c4c;
+  }
+
+  .text-medium-gray {
+    color: #6d6e76;
+  }
+
+  .bg-medium-gray {
+    background: #6d6e76;
+  }
+
+  .text-light-gray {
+    color: #f4f4f4;
+  }
+
+  .bg-light-gray {
+    background: #f4f4f4;
+  }
+
+  .text-lavender {
+    color: #f4f0f8;
+  }
+
+  .bg-lavender {
+    background: #f4f0f8;
+  }
+
+  .text-light-yellow {
+    color: #fbf6ea;
+  }
+
+  .bg-light-yellow {
+    background: #fbf6ea;
+  }
+
+  input,
+  textarea {
+    @apply outline-none;
+  }
+}
