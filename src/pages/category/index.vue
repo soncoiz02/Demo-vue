@@ -1,6 +1,7 @@
 <script>
 import blogApi from "../../api/blog";
 import categoryApi from "../../api/category";
+import ListBlog from "../../components/ListBlog.vue";
 
 export default {
   data() {
@@ -35,8 +36,10 @@ export default {
   watch: {
     $route(from, to) {
       this.cateId = this.$route.params.id;
+      this.handleBlogByCategory(this.cateId);
     },
   },
+  components: { ListBlog },
 };
 </script>
 <template>
@@ -53,31 +56,7 @@ export default {
     </div>
     <div class="container mx-auto px-10">
       <div class="my-32 flex justify-between">
-        <div class="flex flex-col w-[70%] gap-y-8">
-          <div
-            class="flex gap-x-8 items-center"
-            v-for="blog of listBlogs"
-            :key="blog.id"
-          >
-            <img
-              :src="blog.image"
-              alt=""
-              class="w-[294px] h-[312px] object-cover"
-            />
-            <div class="flex flex-col">
-              <p class="cap1 text-purple">{{ blog.category?.name }}</p>
-              <router-link
-                :to="`/post/${blog.id}`"
-                class="h2 mt-5 -tracking-[2px]"
-              >
-                {{ blog.title }}
-              </router-link>
-              <p class="body1 mt-4 text-medium-gray">
-                {{ blog.description }}
-              </p>
-            </div>
-          </div>
-        </div>
+        <ListBlog :listPost="listBlogs" />
         <div class="flex flex-col w-[22%]">
           <h2 class="-tracking-[2px]">Categories</h2>
           <div class="flex flex-col gap-y-6 mt-10">

@@ -1,5 +1,26 @@
 <script>
-export default {};
+import authorApi from "../../api/author";
+
+export default {
+  data() {
+    return {
+      listAuthor: [],
+    };
+  },
+  methods: {
+    async handleGetListAuthor() {
+      try {
+        const data = await authorApi.getAll();
+        this.listAuthor = data;
+      } catch (error) {
+        console.log(error);
+      }
+    },
+  },
+  mounted() {
+    this.handleGetListAuthor();
+  },
+};
 </script>
 <template>
   <div
@@ -7,16 +28,19 @@ export default {};
   >
     <h2>List of Authors</h2>
     <div class="grid gap-8 grid-cols-4 w-full">
-      <div
+      <router-link
         class="flex flex-col justify-center items-center py-10 px-8 bg-light-gray hover:bg-light-yellow transition-[1s]"
+        v-for="author of listAuthor"
+        :key="author.id"
+        :to="`/author/${author.id}`"
       >
         <img
-          src="https://images.pexels.com/photos/7562313/pexels-photo-7562313.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          :src="author.avatar"
           alt=""
           class="w-[128px] h-[128px] rounded-[50%] object-cover"
         />
-        <h3 class="-tracking-[1px] mt-5">Floyd Miles</h3>
-        <p class="body2 text-medium-gray">Content Writer @Company</p>
+        <h3 class="-tracking-[1px] mt-5">{{ author.name }}</h3>
+        <p class="body2 text-medium-gray">{{ author.job }}</p>
         <div class="flex items-center justify-center gap-x-4 mt-5">
           <font-awesome-icon
             icon="fa-brands fa-facebook"
@@ -35,94 +59,7 @@ export default {};
             class="text-xl text-black"
           />
         </div>
-      </div>
-      <div
-        class="flex flex-col justify-center items-center py-10 px-8 bg-gray-100 hover:bg-yellow-50 transition-[1s]"
-      >
-        <img
-          src="https://images.pexels.com/photos/7562313/pexels-photo-7562313.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          alt=""
-          class="w-[128px] h-[128px] rounded-[50%] object-cover"
-        />
-        <h3 class="-tracking-[1px] mt-5">Dianne Russell</h3>
-        <p class="body2 text-medium-gray">Content Writer @Company</p>
-        <div class="flex items-center justify-center gap-x-4 mt-5">
-          <font-awesome-icon
-            icon="fa-brands fa-facebook"
-            class="text-xl text-black"
-          />
-          <font-awesome-icon
-            icon="fa-brands fa-twitter"
-            class="text-xl text-black"
-          />
-          <font-awesome-icon
-            icon="fa-brands fa-instagram"
-            class="text-xl text-black"
-          />
-          <font-awesome-icon
-            icon="fa-brands fa-linkedin"
-            class="text-xl text-black"
-          />
-        </div>
-      </div>
-      <div
-        class="flex flex-col justify-center items-center py-10 px-8 bg-gray-100 hover:bg-yellow-50 transition-[1s]"
-      >
-        <img
-          src="https://images.pexels.com/photos/5704849/pexels-photo-5704849.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          alt=""
-          class="w-[128px] h-[128px] rounded-[50%] object-cover"
-        />
-        <h3 class="-tracking-[1px] mt-5">Jenny Wilson</h3>
-        <p class="body2 text-medium-gray">Content Writer @Company</p>
-        <div class="flex items-center justify-center gap-x-4 mt-5">
-          <font-awesome-icon
-            icon="fa-brands fa-facebook"
-            class="text-xl text-black"
-          />
-          <font-awesome-icon
-            icon="fa-brands fa-twitter"
-            class="text-xl text-black"
-          />
-          <font-awesome-icon
-            icon="fa-brands fa-instagram"
-            class="text-xl text-black"
-          />
-          <font-awesome-icon
-            icon="fa-brands fa-linkedin"
-            class="text-xl text-black"
-          />
-        </div>
-      </div>
-      <div
-        class="flex flex-col justify-center items-center py-10 px-8 bg-gray-100 hover:bg-yellow-50 transition-[1s]"
-      >
-        <img
-          src="https://images.pexels.com/photos/6205509/pexels-photo-6205509.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          alt=""
-          class="w-[128px] h-[128px] rounded-[50%] object-cover"
-        />
-        <h3 class="-tracking-[1px] mt-5">Leslie Alexander</h3>
-        <p class="body2 text-medium-gray">Content Writer @Company</p>
-        <div class="flex items-center justify-center gap-x-4 mt-5">
-          <font-awesome-icon
-            icon="fa-brands fa-facebook"
-            class="text-xl text-black"
-          />
-          <font-awesome-icon
-            icon="fa-brands fa-twitter"
-            class="text-xl text-black"
-          />
-          <font-awesome-icon
-            icon="fa-brands fa-instagram"
-            class="text-xl text-black"
-          />
-          <font-awesome-icon
-            icon="fa-brands fa-linkedin"
-            class="text-xl text-black"
-          />
-        </div>
-      </div>
+      </router-link>
     </div>
   </div>
 </template>

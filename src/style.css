@@ -42,7 +42,8 @@
     @apply leading-[36px];
   }
 
-  h4 {
+  h4,
+  .h4 {
     @apply font-bold;
     @apply text-[24px];
     @apply leading-[32px];

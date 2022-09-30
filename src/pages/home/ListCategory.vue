@@ -30,10 +30,11 @@ export default {
   >
     <h2>{{ options === 1 ? "Choose A Catagory" : "All Categories" }}</h2>
     <div class="grid gap-8 grid-cols-4">
-      <div
+      <router-link
         class="flex flex-col border border-gray-300 p-8 hover:bg-yellow"
         v-for="cate of categories"
         :key="cate.id"
+        :to="`/category/${cate.id}`"
       >
         <div
           class="aspect-square w-12 bg-light-yellow rounded-xl flex items-center justify-center"
@@ -44,7 +45,7 @@ export default {
         <p class="body1 text-medium-gray mt-1">
           {{ cate.description }}
         </p>
-      </div>
+      </router-link>
     </div>
   </div>
 </template>

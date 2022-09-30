@@ -75,9 +75,9 @@ export default {
               By <span class="text-purple">{{ post.author?.name }}</span>
               {{ formatDate(post.createdAt) }}
             </p>
-            <h4 class="mt-2 w-[75%]">
+            <router-link :to="`/post/${post.title}`" class="h4 mt-2 w-[75%]">
               {{ post.title }}
-            </h4>
+            </router-link>
           </div>
         </div>
       </div>
