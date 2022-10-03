@@ -2,12 +2,12 @@
 export default {};
 </script>
 <template>
-  <div class="container mx-auto px-10 py-32">
+  <div class="container mx-auto md:px-10 px-5 md:py-32 py-16">
     <div class="flex flex-col gap-y-32">
-      <div class="flex justify-between">
-        <div class="flex flex-col justify-center w-[40%]">
+      <div class="flex md:flex-row flex-col gap-y-8 justify-between">
+        <div class="flex flex-col justify-center md:w-[40%]">
           <h2>Our team of creatives</h2>
-          <h4 class="my-4 w-[90%]">
+          <h4 class="md:my-4 my-2 md:w-[90%]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt.
           </h4>
@@ -19,7 +19,7 @@ export default {};
             reprehenderit in voluptate velit esse cillum dolore eu fugiat.
           </p>
         </div>
-        <div class="relative w-[50%]">
+        <div class="relative md:w-[50%]">
           <img
             src="https://images.pexels.com/photos/461049/pexels-photo-461049.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt=""
@@ -29,8 +29,8 @@ export default {};
           ></div>
         </div>
       </div>
-      <div class="flex justify-between">
-        <div class="relative w-[45%]">
+      <div class="flex md:flex-row flex-col justify-between gap-y-8">
+        <div class="relative md:w-[45%]">
           <img
             src="https://images.pexels.com/photos/1438072/pexels-photo-1438072.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt=""
@@ -39,13 +39,13 @@ export default {};
             class="bg-purple w-[74px] h-[74px] rounded-[50%] absolute left-[20%] bottom-[-37px]"
           ></div>
         </div>
-        <div class="flex flex-col justify-center w-[50%]">
+        <div class="flex flex-col justify-center md:w-[50%]">
           <h2>Why we started this Blog</h2>
-          <h4 class="my-4 w-[75%]">
+          <h4 class="md:my-4 my-2 md:w-[75%]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt.
           </h4>
-          <p class="body1 w-[80%]">
+          <p class="body1 md:w-[80%]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut

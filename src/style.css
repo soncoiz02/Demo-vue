@@ -24,58 +24,58 @@
 
   h1 {
     @apply font-bold;
-    @apply text-[48px];
+    @apply md:text-[48px] text-[34px];
     @apply leading-[64px];
   }
 
   h2,
   .h2 {
     @apply font-bold;
-    @apply text-[36px];
+    @apply md:text-[36px] text-[28px];
     @apply leading-[48px];
   }
 
   h3,
   .h3 {
     @apply font-bold;
-    @apply text-[28px];
+    @apply md:text-[28px] text-[24px];
     @apply leading-[36px];
   }
 
   h4,
   .h4 {
     @apply font-bold;
-    @apply text-[24px];
+    @apply md:text-[24px] text-[20px];
     @apply leading-[32px];
   }
 
   h5 {
     @apply font-bold;
-    @apply text-[20px];
+    @apply md:text-[20px] text-[16px];
     @apply leading-[32px];
   }
 
   h6 {
     @apply font-bold;
-    @apply text-[16px];
+    @apply md:text-[16px] text-[12px];
     @apply leading-[24px];
   }
 
   .display {
     @apply font-bold;
-    @apply text-[56px];
+    @apply md:text-[56px] text-[34px];
     @apply leading-[64px];
   }
 
   .body1 {
     @apply font-normal;
-    @apply text-[16px];
+    @apply md:text-[16px] text-[12px];
     @apply leading-[28px];
   }
 
   .body2 {
     @apply font-normal;
-    @apply text-[14px];
+    @apply md:text-[14px] text-[10px];
     @apply leading-[20px];
   }
 

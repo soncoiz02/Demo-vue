@@ -2,29 +2,33 @@
 export default {};
 </script>
 <template>
-  <div class="container mx-auto px-10">
+  <div class="container mx-auto md:px-10 px-5">
     <div class="w-full flex justify-end">
       <div class="bg-yellow w-[60%] h-6"></div>
       <div class="bg-purple w-[20%] h-6"></div>
     </div>
-    <div class="w-full px-20 py-24 bg-lavender flex">
-      <div class="flex flex-col w-[50%]">
+    <div
+      class="w-full md:px-20 px-10 md:py-24 py-12 bg-lavender flex flex-col md:flex-row gap-y-8"
+    >
+      <div class="flex flex-col md:w-[50%] w-full">
         <h3 class="cap1">ABOUT US</h3>
-        <h2 class="-tracking-[2px] mt-6 w-[75%]">
+        <h2 class="-tracking-[2px] md:mt-6 mt-3 md:w-[75%] w-full">
           We are a community of content writers who share their learnings
         </h2>
-        <p class="mt-4 body1 w-[75%]">
+        <p class="md:mt-4 mt-2 body1 md:w-[75%] w-full">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
-        <a href="" class="mt-4 text-purple font-bold text-lg">Read More ></a>
+        <a href="" class="md:mt-4 mt-2 text-purple font-bold text-lg"
+          >Read More ></a
+        >
       </div>
-      <div class="flex flex-col w-[50%]">
+      <div class="flex flex-col md:w-[50%] w-full">
         <h3 class="cap1">OUR MISSON</h3>
-        <h3 class="-tracking-[1px] mt-6 w-[75%]">
+        <h3 class="-tracking-[1px] md:mt-6 mt-3 md:w-[75%] w-full">
           Creating valuable content for creatives all around the world
         </h3>
-        <p class="mt-4 body1 w-[81%]">
+        <p class="md:mt-4 mt-2 body1 md:w-[81%] w-full">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut

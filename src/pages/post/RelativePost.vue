@@ -2,10 +2,10 @@
 export default {};
 </script>
 <template>
-  <div class="container mx-auto px-10">
-    <div class="flex flex-col gap-y-16">
+  <div class="container mx-auto md:px-10 px-5">
+    <div class="flex flex-col md:gap-y-16 gap-y-8">
       <h2 class="-tracking-[2px]">What to read next</h2>
-      <div class="grid grid-cols-3 gap-x-8">
+      <div class="grid md:grid-cols-3 md:gap-x-8 gap-y-8">
         <div class="flex flex-col">
           <img
             src="https://images.pexels.com/photos/1181533/pexels-photo-1181533.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"

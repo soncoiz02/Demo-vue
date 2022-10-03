@@ -24,10 +24,10 @@ export default {
 </script>
 <template>
   <div
-    class="container mx-auto flex flex-col items-center gap-y-12 px-10 mt-32"
+    class="container mx-auto flex flex-col items-center gap-y-12 px-10 md:mt-32 mt-16"
   >
     <h2>List of Authors</h2>
-    <div class="grid gap-8 grid-cols-4 w-full">
+    <div class="grid gap-8 md:grid-cols-4 w-full">
       <router-link
         class="flex flex-col justify-center items-center py-10 px-8 bg-light-gray hover:bg-light-yellow transition-[1s]"
         v-for="author of listAuthor"

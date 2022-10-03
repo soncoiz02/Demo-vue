@@ -35,6 +35,7 @@ export default {
     page: {
       handler(nextVal, prevVal) {
         this.handleGetListPost(nextVal);
+        window.scrollTo(0, 0);
       },
     },
   },
@@ -42,10 +43,10 @@ export default {
 };
 </script>
 <template>
-  <div class="container mx-auto px-10">
-    <div class="flex flex-col my-16">
+  <div class="container mx-auto md:px-10 px-5">
+    <div class="flex flex-col md:my-16 my-8">
       <h1 class="-tracking-[2px]">All posts</h1>
-      <hr class="mt-8" />
+      <hr class="md:mt-8 mt-4" />
       <ListBlog :listPost="listPost" />
       <div class="flex justify-center items-center gap-x-4">
         <h4

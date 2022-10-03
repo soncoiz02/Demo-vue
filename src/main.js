@@ -1,6 +1,6 @@
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faFacebook, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
-import { faLeftLong, faRightLong } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faLeftLong, faRightLong } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import Vue from 'vue'
 import VueRouter from 'vue-router'
@@ -65,7 +65,7 @@ const router = new VueRouter({
     routes
 })
 
-library.add(faFacebook, faTwitter, faInstagram, faLinkedin, faRightLong, faLeftLong)
+library.add(faFacebook, faTwitter, faInstagram, faLinkedin, faRightLong, faLeftLong, faBars)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 

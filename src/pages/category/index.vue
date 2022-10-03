@@ -45,19 +45,19 @@ export default {
 <template>
   <div>
     <div
-      class="bg-lavender py-20 flex flex-col items-center justify-center mt-[80px]"
+      class="bg-lavender md:py-20 py-10 flex flex-col items-center justify-center md:mt-[80px] mt-[50px]"
     >
       <p class="display">Business</p>
-      <p class="body1 text-medium-gray w-[25%] text-center">
+      <p class="body1 text-medium-gray md:w-[25%] text-center">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore.
       </p>
-      <p class="cap3 mt-8 uppercase">Blog > Business</p>
+      <p class="cap3 md:mt-8 mt-4 uppercase">Blog > Business</p>
     </div>
-    <div class="container mx-auto px-10">
-      <div class="my-32 flex justify-between">
+    <div class="container mx-auto md:px-10 px-5">
+      <div class="md:my-32 my-16 flex md:flex-row flex-col justify-between">
         <ListBlog :listPost="listBlogs" />
-        <div class="flex flex-col w-[22%]">
+        <div class="flex flex-col md:w-[22%]">
           <h2 class="-tracking-[2px]">Categories</h2>
           <div class="flex flex-col gap-y-6 mt-10">
             <router-link

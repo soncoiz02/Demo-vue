@@ -31,9 +31,9 @@ export default {
 };
 </script>
 <template>
-  <div class="container mx-auto px-10 py-32">
+  <div class="container mx-auto md:px-10 px-5 md:py-32 py-16">
     <div class="flex flex-col items-center">
-      <div class="flex flex-col w-[55%]">
+      <div class="flex flex-col md:w-[55%]">
         <div class="flex gap-x-4">
           <img
             :src="postDetail.author?.avatar"
@@ -51,22 +51,22 @@ export default {
             </p>
           </div>
         </div>
-        <h1 class="-tracking-[2px] mt-6 w-[90% ]">
+        <h1 class="-tracking-[2px] md:mt-6 mt-3 md:w-[90%]">
           {{ postDetail.title }}
         </h1>
-        <div class="flex gap-x-2 mt-8 items-center">
+        <div class="flex gap-x-2 md:mt-8 mt-4 items-center">
           <img :src="postDetail.category?.icon" alt="" />
           <h4>{{ postDetail.category?.name }}</h4>
         </div>
       </div>
-      <div class="my-16 w-full">
+      <div class="md:my-16 my-8 w-full">
         <img
           :src="postDetail.image"
           alt=""
-          class="w-full object-cover h-[582px]"
+          class="w-full object-cover md:h-[582px] h-[300px]"
         />
       </div>
-      <div class="flex flex-col w-[55%] gap-y-12">
+      <div class="flex flex-col md:w-[55%] gap-y-12">
         <div v-html="markdownToHtml"></div>
       </div>
     </div>

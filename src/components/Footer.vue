@@ -4,10 +4,12 @@ export default { components: { MainButton } };
 </script>
 <template>
   <div class="bg-slate-800">
-    <div class="container mx-auto py-12 px-10">
-      <div class="flex justify-between">
-        <img src="../assets/img/Logo.svg" alt="" />
-        <div class="flex items-center gap-x-6">
+    <div class="container mx-auto md:py-12 py-8 md:px-10 px-5">
+      <div class="flex md:flex-row flex-col justify-between gap-y-4">
+        <img src="../assets/Logo.svg" class="h-10" alt="" />
+        <div
+          class="flex items-center flex-wrap justify-center md:gap-x-6 gap-x-3"
+        >
           <router-link to="/" class="text-white text-lg">Home</router-link>
           <router-link to="/blog" class="text-white text-lg">Blog</router-link>
           <router-link to="/about" class="text-white text-lg"
@@ -22,16 +24,18 @@ export default { components: { MainButton } };
         </div>
       </div>
       <div
-        class="mt-14 bg-slate-700 px-16 py-20 flex justify-between items-center"
+        class="md:mt-14 mt-7 bg-slate-700 md:px-16 px-8 md:py-20 py-10 flex md:flex-row flex-col justify-between items-center gap-y-4"
       >
-        <p class="text-white text-[36px] font-bold w-[50%]">
+        <h2 class="text-white md:w-[50%] text-center md:text-left">
           Subscribe to our news letter to get latest updates and news
-        </p>
-        <div class="flex items-center w-[50%] gap-x-6 justify-end">
+        </h2>
+        <div
+          class="flex md:flex-row flex-col md:items-center items-center md:w-[50%] w-full md:gap-x-6 gap-y-4 justify-end"
+        >
           <input
             type="text"
             placeholder="Enter your email"
-            class="bg-transparent border border-gray-400 px-6 py-4 w-[60%] outline-none text-white"
+            class="bg-transparent border border-gray-400 px-6 py-4 md:w-[60%] w-full outline-none text-white"
           />
           <MainButton :text="'Subscribe'" />
         </div>
