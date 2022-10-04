@@ -5,7 +5,7 @@ export default {
 </script>
 <template>
   <div
-    :class="`flex flex-col bg-white w-[80%] h-screen fixed top-0 transition-[0.5s]
+    :class="`flex flex-col bg-white w-[80%] md:w-[50%] h-screen fixed top-0 transition-[0.5s]
      ${isOpen ? 'left-0' : 'left-[-100%]'} z-40  p-5`"
   >
     <div class="flex flex-col justify-center mt-[80px] gap-y-8">

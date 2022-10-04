@@ -2,16 +2,16 @@
 export default {};
 </script>
 <template>
-  <div class="container mx-auto md:px-10 px-5 md:py-32 py-16">
-    <div class="flex flex-col gap-y-32">
+  <div class="container mx-auto md:px-10 px-5 lg:py-32 md:py-20 py-16">
+    <div class="flex flex-col md:gap-y-20 gap-y-32">
       <div class="flex md:flex-row flex-col gap-y-8 justify-between">
-        <div class="flex flex-col justify-center md:w-[40%]">
+        <div class="flex flex-col justify-center lg:w-[40%] md:w-[60%]">
           <h2>Our team of creatives</h2>
-          <h4 class="md:my-4 my-2 md:w-[90%]">
+          <h4 class="md:my-4 my-2 lg:w-[90%] md:w-[80%]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt.
           </h4>
-          <p class="body1">
+          <p class="body1 md:w-[90%]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -19,33 +19,33 @@ export default {};
             reprehenderit in voluptate velit esse cillum dolore eu fugiat.
           </p>
         </div>
-        <div class="relative md:w-[50%]">
+        <div class="relative lg:w-[50%] md:w-[40%]">
           <img
             src="https://images.pexels.com/photos/461049/pexels-photo-461049.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt=""
           />
           <div
-            class="bg-yellow w-[104px] h-[116px] rounded-tl-[50px] absolute top-[20%] left-[-55px]"
+            class="bg-yellow md:w-[50px] md:h-[60px] w-[104px] h-[116px] rounded-tl-[50px] absolute top-[20%] md:rounded-tl-[30px] md:left-[-25px] left-[-55px]"
           ></div>
         </div>
       </div>
       <div class="flex md:flex-row flex-col justify-between gap-y-8">
-        <div class="relative md:w-[45%]">
+        <div class="relative lg:w-[45%] md:w-[40%] self-start">
           <img
             src="https://images.pexels.com/photos/1438072/pexels-photo-1438072.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt=""
           />
           <div
-            class="bg-purple w-[74px] h-[74px] rounded-[50%] absolute left-[20%] bottom-[-37px]"
+            class="bg-purple md:w-[45px] md:h-[45px] w-[74px] h-[74px] rounded-[50%] absolute left-[20%] md:bottom-[-22px] bottom-[-37px]"
           ></div>
         </div>
-        <div class="flex flex-col justify-center md:w-[50%]">
+        <div class="flex flex-col justify-center lg:w-[50%] md:w-[60%] md:pl-6">
           <h2>Why we started this Blog</h2>
-          <h4 class="md:my-4 my-2 md:w-[75%]">
+          <h4 class="md:my-4 my-2 lg:w-[75%]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt.
           </h4>
-          <p class="body1 md:w-[80%]">
+          <p class="body1 lg:w-[80%]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut

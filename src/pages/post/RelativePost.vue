@@ -2,7 +2,7 @@
 export default {};
 </script>
 <template>
-  <div class="container mx-auto md:px-10 px-5">
+  <div class="container mx-auto lg:px-10 md:px-6 px-5">
     <div class="flex flex-col md:gap-y-16 gap-y-8">
       <h2 class="-tracking-[2px]">What to read next</h2>
       <div class="grid md:grid-cols-3 md:gap-x-8 gap-y-8">

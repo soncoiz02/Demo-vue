@@ -2,18 +2,18 @@
 export default {};
 </script>
 <template>
-  <div class="container mx-auto md:px-10 px-5 md:pt-[160px] pt-[80px]">
+  <div class="container mx-auto lg:px-10 md:px-6 px-5 lg:pt-[160px] pt-[80px]">
     <div class="flex md:flex-row flex-col justify-end w-full">
       <div
-        class="flex flex-col md:gap-y-4 gap-y-2 bg-white md:p-16 p-0 md:-mb-12 md:w-[55%]"
+        class="flex flex-col md:gap-y-4 gap-y-2 bg-white lg:p-16 md:p-10 p-0 md:-mb-12 lg:w-[55%] md:w-[60%]"
       >
         <p class="cap3">ABOUT US</p>
-        <h1 class="md:w-[80%]">
+        <h1 class="lg:w-[80%]">
           We are a team of content writers who share their learnings
         </h1>
       </div>
       <div
-        class="flex items-end md:pt-[100px] md:pb-20 md:px-8 pt-5 pb-10 md:w-[40%]"
+        class="flex items-end md:pt-[100px] lg:pb-20 md:pb-10 lg:px-8 md:px-6 pt-5 pb-10 md:w-[40%]"
       >
         <p class="body1">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -29,7 +29,7 @@ export default {};
         alt=""
         class="w-full h-full object-cover absolute -z-10 md:block hidden"
       />
-      <div class="md:ml-[108px] w-full">
+      <div class="lg:ml-[108px] w-full">
         <div class="flex flex-col md:flex-row">
           <div
             class="bg-yellow px-12 py-8 flex flex-col items-center md:items-start"
@@ -56,8 +56,10 @@ export default {};
         </div>
       </div>
     </div>
-    <div class="bg-lavender md:px-[108px] md:py-32 px-8 py-16">
-      <div class="grid md:grid-cols-2 md:gap-x-8 gap-y-8">
+    <div
+      class="bg-lavender lg:px-[108px] md:px-20 lg:py-32 md:py-26 px-8 py-16"
+    >
+      <div class="grid lg:grid-cols-2 lg:gap-x-8 gap-y-8">
         <div class="flex flex-col">
           <p class="cap1 uppercase">Our mision</p>
           <h3 class="md:mt-6 mt-3 md:w-[70%]">

@@ -2,7 +2,7 @@
 export default {};
 </script>
 <template>
-  <div class="mt-20">
+  <div class="lg:mt-20 mt-10">
     <div
       class="flex flex-col justify-center items-center w-full py-20 bg-lavender"
     >
@@ -11,9 +11,11 @@ export default {};
         Last Updated on 27th January 2022
       </p>
     </div>
-    <div class="flex flex-col px-10 py-32 mx-auto w-[60%]">
+    <div
+      class="flex flex-col px-10 lg:py-32 md:py-20 py-10 mx-auto lg:w-[60%] md:w-[90%]"
+    >
       <h1>Lorem ipsum dolor sit amet</h1>
-      <div class="body1 mt-8">
+      <div class="body1 lg:mt-8 mt-4">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -31,7 +33,7 @@ export default {};
         ut placerat orci nulla. Neque convallis a cras semper auctor neque vitae
         tempus quam.
       </div>
-      <h2 class="mt-8">
+      <h2 class="lg:mt-8 mt-4">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor.
       </h2>

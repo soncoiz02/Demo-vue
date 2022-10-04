@@ -45,21 +45,23 @@ export default {
 <template>
   <div>
     <div
-      class="bg-lavender md:py-20 py-10 flex flex-col items-center justify-center md:mt-[80px] mt-[50px]"
+      class="bg-lavender md:py-20 py-10 flex flex-col items-center justify-center lg:mt-[80px] mt-[50px]"
     >
       <p class="display">Business</p>
-      <p class="body1 text-medium-gray md:w-[25%] text-center">
+      <p class="body1 text-medium-gray lg:w-[25%] md:w-[60%] text-center">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore.
       </p>
       <p class="cap3 md:mt-8 mt-4 uppercase">Blog > Business</p>
     </div>
     <div class="container mx-auto md:px-10 px-5">
-      <div class="md:my-32 my-16 flex md:flex-row flex-col justify-between">
-        <ListBlog :listPost="listBlogs" />
-        <div class="flex flex-col md:w-[22%]">
+      <div
+        class="lg:my-32 md:my-20 my-16 flex lg:flex-row flex-col justify-between"
+      >
+        <ListBlog class="lg:w-[75%] w-full" :listPost="listBlogs" />
+        <div class="flex flex-col lg:w-[25%]">
           <h2 class="-tracking-[2px]">Categories</h2>
-          <div class="flex flex-col gap-y-6 mt-10">
+          <div class="grid md:grid-cols-2 lg:grid-cols-1 gap-6 mt-10">
             <router-link
               v-for="cate of categories"
               :key="cate.id"

@@ -24,58 +24,58 @@
 
   h1 {
     @apply font-bold;
-    @apply md:text-[48px] text-[34px];
+    @apply lg:text-[48px] md:text-[40px] text-[34px];
     @apply leading-[64px];
   }
 
   h2,
   .h2 {
     @apply font-bold;
-    @apply md:text-[36px] text-[28px];
+    @apply lg:text-[36px] md:text-[32px] text-[28px];
     @apply leading-[48px];
   }
 
   h3,
   .h3 {
     @apply font-bold;
-    @apply md:text-[28px] text-[24px];
+    @apply lg:text-[28px] md:text-[24px] text-[20px];
     @apply leading-[36px];
   }
 
   h4,
   .h4 {
     @apply font-bold;
-    @apply md:text-[24px] text-[20px];
+    @apply lg:text-[24px] md:text-[22px] text-[20px];
     @apply leading-[32px];
   }
 
   h5 {
     @apply font-bold;
-    @apply md:text-[20px] text-[16px];
+    @apply lg:text-[20px] md:text-[18px] text-[16px];
     @apply leading-[32px];
   }
 
   h6 {
     @apply font-bold;
-    @apply md:text-[16px] text-[12px];
+    @apply lg:text-[16px] md:text-[14px] text-[12px];
     @apply leading-[24px];
   }
 
   .display {
     @apply font-bold;
-    @apply md:text-[56px] text-[34px];
+    @apply lg:text-[56px] md:text-[40px] text-[34px];
     @apply leading-[64px];
   }
 
   .body1 {
     @apply font-normal;
-    @apply md:text-[16px] text-[12px];
+    @apply lg:text-[16px] md:text-[14px] text-[12px];
     @apply leading-[28px];
   }
 
   .body2 {
     @apply font-normal;
-    @apply md:text-[14px] text-[10px];
+    @apply lg:text-[14px] md:text-[12px] text-[10px];
     @apply leading-[20px];
   }
 

@@ -26,10 +26,10 @@ export default {
   <div
     :class="`container mx-auto flex flex-col ${
       options === 1 ? 'items-center' : ''
-    } md:gap-y-12 gap-y-6 md:px-10 px-5 md:mt-32 mt-16`"
+    } lg:gap-y-12 md:gap-y-8 gap-y-6 lg:px-10 md:px-6 px-5 lg:mt-32 md:mt-26 mt-16`"
   >
     <h2>{{ options === 1 ? "Choose A Catagory" : "All Categories" }}</h2>
-    <div class="grid md:gap-8 gap-4 md:grid-cols-4">
+    <div class="grid lg:gap-8 gap-4 lg:grid-cols-4 md:grid-cols-2">
       <router-link
         class="flex flex-col border border-gray-300 p-8 hover:bg-yellow"
         v-for="cate of categories"

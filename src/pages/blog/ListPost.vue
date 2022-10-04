@@ -43,8 +43,8 @@ export default {
 };
 </script>
 <template>
-  <div class="container mx-auto md:px-10 px-5">
-    <div class="flex flex-col md:my-16 my-8">
+  <div class="container mx-auto lg:px-10 md:px-6 px-5">
+    <div class="flex flex-col lg:my-16 md:my-10 my-8">
       <h1 class="-tracking-[2px]">All posts</h1>
       <hr class="md:mt-8 mt-4" />
       <ListBlog :listPost="listPost" />

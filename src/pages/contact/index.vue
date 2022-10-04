@@ -4,7 +4,7 @@ export default { components: { MainButton } };
 </script>
 <template>
   <div
-    class="md:mt-20 mt-10 md:py-32 py-16 px-5 flex flex-col items-center justify-center md:w-[40%] mx-auto"
+    class="md:mt-20 mt-10 lg:py-32 md:py-20 py-16 md:px-6 px-5 flex flex-col items-center justify-center lg:w-[40%] mx-auto"
   >
     <div class="cap3 uppercase font-extrabold">Contact us</div>
     <h1 class="mt-3 text-center">Let’s Start a Conversation</h1>

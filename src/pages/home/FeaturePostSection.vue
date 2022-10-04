@@ -36,9 +36,11 @@ export default {
 };
 </script>
 <template>
-  <div class="container mx-auto md:px-10 px-5 md:py-32 py-16">
-    <div class="flex flex-col md:flex-row gap-y-4">
-      <div class="flex flex-col md:gap-y-8 gap-y-4 md:w-[60%] w-full">
+  <div class="container mx-auto lg:px-10 md:px-6 px-5 md:py-32 py-16">
+    <div class="flex flex-col lg:flex-row md:gap-y-8 gap-y-6">
+      <div
+        class="flex flex-col lg:gap-y-8 md:gap-y-6 gap-y-4 lg:w-[60%] w-full"
+      >
         <h2 class="-tracking-[2px]">Featured Post</h2>
         <div
           v-if="!!featurePost"
@@ -61,7 +63,7 @@ export default {
           <MainButton class="md:mt-8 mt-4 self-start" :text="'Read More >'" />
         </div>
       </div>
-      <div class="flex flex-col md:w-[40%] w-full md:pl-8">
+      <div class="flex flex-col lg:w-[40%] w-full lg:pl-8">
         <div class="flex items-center justify-between">
           <h2 class="-tracking-[2px]">All Posts</h2>
           <router-link to="/blog" class="text-purple body1"
@@ -70,7 +72,7 @@ export default {
         </div>
         <div class="flex flex-col md:mt-8 mt-4">
           <div
-            class="flex flex-col gap-y-2 md:px-8 px-6 md:pt-8 pt-6 mg:pb-6 pb-4 hover:bg-light-yellow"
+            class="flex flex-col gap-y-2 lg:px-8 px-6 lg:pt-8 pt-6 lg:pb-6 pb-4 md:pb-6 hover:bg-light-yellow"
             v-for="post of previewPost"
             :key="post.id"
           >
@@ -78,7 +80,7 @@ export default {
               By <span class="text-purple">{{ post.author?.name }}</span>
               {{ formatDate(post.createdAt) }}
             </p>
-            <router-link :to="`/post/${post.title}`" class="h4 mt-2 w-[75%]">
+            <router-link :to="`/post/${post.title}`" class="h4 mt-2 lg:w-[75%]">
               {{ post.title }}
             </router-link>
           </div>

@@ -3,17 +3,17 @@ import MainButton from "../../components/MainButton.vue";
 export default { components: { MainButton } };
 </script>
 <template>
-  <div class="container mx-auto md:px-10 px-5 md:mt-32 mt-16 relative">
+  <div class="container mx-auto lg:px-10 md:px-6 px-5 md:mt-32 mt-16 relative">
     <img
       src="../../assets/img/home-page-img/img2.png"
-      class="object-cover w-[75%] h-[700px] md:block hidden"
+      class="object-cover lg:w-[75%] h-[700px] md:block hidden"
       alt=""
     />
     <div
-      class="flex flex-col md:p-20 p-0 bg-white md:w-[55%] md:absolute bottom-0 right-0"
+      class="flex flex-col lg:p-20 md:p-12 p-0 bg-white lg:w-[55%] md:w-[85%] md:absolute bottom-0 right-0"
     >
       <p class="uppercase cap1">Why we started</p>
-      <h1 class="-tracking-[2px] md:mt-6 mt-3 md:w-[80%]">
+      <h1 class="-tracking-[2px] md:mt-6 mt-3 lg:w-[80%]">
         It started out as a simple idea and evolved into our passion
       </h1>
       <p class="text-medium-gray md:mt-4 mt-2 body1">

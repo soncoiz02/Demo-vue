@@ -5,13 +5,13 @@ export default {
 </script>
 <template>
   <div
-    class="md:mt-[80px] mt-[50px] md:py-32 py-16 md:px-10 px-5 flex justify-center items-center bg-lavender relative"
+    class="lg:mt-[80px] mt-[50px] lg:py-32 md:py-26 py-16 lg:px-10 md:px-6 px-5 flex justify-center items-center bg-lavender relative"
   >
-    <div class="flex flex-col md:flex-row md:gap-x-8 gap-y-4 md:w-[60%]">
+    <div class="flex flex-col md:flex-row md:gap-x-8 gap-y-4 lg:w-[60%]">
       <img
         :src="author.avatar"
         alt=""
-        class="md:w-[250px] md:h-[290px] w-[150px] h-[160px] object-cover"
+        class="lg:w-[250px] lg:h-[290px] md:w-[200px] md:h-[250px] w-[150px] h-[160px] object-cover"
       />
       <div class="flex flex-col md:w-[70%]">
         <h1>Hey there, I’m {{ author.name }} and welcome to my Blog</h1>
@@ -38,7 +38,7 @@ export default {
         </div>
       </div>
     </div>
-    <div class="absolute bottom-0 md:w-[55%] w-[80%] flex">
+    <div class="absolute bottom-0 lg:w-[55%] w-[80%] flex">
       <div class="w-[75%] bg-yellow h-6"></div>
       <div class="w-[25%] bg-purple h-6"></div>
     </div>

@@ -5,7 +5,7 @@ export default { components: { MainButton } };
 <template>
   <div class="bg-slate-800">
     <div class="container mx-auto md:py-12 py-8 md:px-10 px-5">
-      <div class="flex md:flex-row flex-col justify-between gap-y-4">
+      <div class="flex lg:flex-row flex-col justify-between md:gap-y-6 gap-y-4">
         <img src="../assets/Logo.svg" class="h-10" alt="" />
         <div
           class="flex items-center flex-wrap justify-center md:gap-x-6 gap-x-3"
@@ -24,13 +24,13 @@ export default { components: { MainButton } };
         </div>
       </div>
       <div
-        class="md:mt-14 mt-7 bg-slate-700 md:px-16 px-8 md:py-20 py-10 flex md:flex-row flex-col justify-between items-center gap-y-4"
+        class="md:mt-14 mt-7 bg-slate-700 lg:px-16 md:px-10 px-8 lg:py-20 md:py-12 py-10 flex lg:flex-row flex-col justify-between items-center gap-y-4"
       >
-        <h2 class="text-white md:w-[50%] text-center md:text-left">
+        <h2 class="text-white lg:w-[50%] text-center lg:text-left">
           Subscribe to our news letter to get latest updates and news
         </h2>
         <div
-          class="flex md:flex-row flex-col md:items-center items-center md:w-[50%] w-full md:gap-x-6 gap-y-4 justify-end"
+          class="flex md:flex-row flex-col md:items-center items-center lg:w-[50%] w-full md:gap-x-6 gap-y-4 justify-end"
         >
           <input
             type="text"
