@@ -26,7 +26,7 @@ const blogApi = {
         return axiosClient.get(`/blogs?_expand=category&_expand=author&_page=${page}&_limit=4`)
     },
     getBlogsByCategory(id) {
-        return axiosClient.get(`/blogs?categoryId=${id}&_expand=category`)
+        return axiosClient.get(`/blogs?categoryId=${id}&_expand=category&_expand=author`)
     },
     getBlogsByAuthor(id) {
         return axiosClient.get(`/blogs?authorId=${id}&_expand=category`)

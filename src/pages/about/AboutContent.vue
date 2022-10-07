@@ -25,7 +25,7 @@ export default {};
             alt=""
           />
           <div
-            class="bg-yellow md:w-[50px] md:h-[60px] w-[104px] h-[116px] rounded-tl-[50px] absolute top-[20%] md:rounded-tl-[30px] md:left-[-25px] left-[-55px]"
+            class="bg-yellow md:w-[50px] md:h-[60px] lg:w-[104px] lg:h-[116px] w-[30px] h-[45px] lg:rounded-tl-[50px] rounded-tl-[15px] absolute top-[20%] md:rounded-tl-[30px] md:left-[-25px] lg:left-[-55px] left-[-15px]"
           ></div>
         </div>
       </div>
@@ -36,7 +36,7 @@ export default {};
             alt=""
           />
           <div
-            class="bg-purple md:w-[45px] md:h-[45px] w-[74px] h-[74px] rounded-[50%] absolute left-[20%] md:bottom-[-22px] bottom-[-37px]"
+            class="bg-purple md:w-[45px] md:h-[45px] lg:w-[74px] lg:h-[74px] w-[40px] h-[40px] rounded-[50%] absolute left-[20%] md:bottom-[-22px] lg:bottom-[-37px] bottom-[-20px]"
           ></div>
         </div>
         <div class="flex flex-col justify-center lg:w-[50%] md:w-[60%] md:pl-6">

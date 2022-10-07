@@ -60,7 +60,11 @@ export default {
           <p class="body1 md:mt-4 mt-2">
             {{ featurePost.description }}
           </p>
-          <MainButton class="md:mt-8 mt-4 self-start" :text="'Read More >'" />
+          <router-link
+            :to="`/post/${featurePost.id}`"
+            class="md:mt-8 mt-4 self-start bg-yellow md:px-12 py-4 px-8 text-black font-bold md:text-xl text-lg"
+            >Read more ></router-link
+          >
         </div>
       </div>
       <div class="flex flex-col lg:w-[40%] w-full lg:pl-8">
@@ -80,7 +84,7 @@ export default {
               By <span class="text-purple">{{ post.author?.name }}</span>
               {{ formatDate(post.createdAt) }}
             </p>
-            <router-link :to="`/post/${post.title}`" class="h4 mt-2 lg:w-[75%]">
+            <router-link :to="`/post/${post.id}`" class="h4 mt-2 lg:w-[75%]">
               {{ post.title }}
             </router-link>
           </div>

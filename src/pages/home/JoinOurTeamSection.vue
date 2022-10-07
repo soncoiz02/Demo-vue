@@ -12,7 +12,11 @@ export default { components: { MainButton } };
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt.
       </p>
-      <MainButton class="mt-8" :text="'Join Now'" />
+      <router-link
+        to="/contact"
+        class="mt-8 bg-yellow md:px-12 py-4 px-8 text-black font-bold md:text-xl text-lg"
+        >Join Now</router-link
+      >
     </div>
   </div>
 </template>

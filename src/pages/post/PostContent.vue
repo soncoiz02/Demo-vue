@@ -1,30 +1,11 @@
 <script>
-import blogApi from "../../api/blog";
-import { formatDate } from "../../utils/formatDate";
 import { marked } from "marked";
+import { formatDate } from "../../utils/formatDate";
 export default {
-  data() {
-    return {
-      postDetail: {},
-    };
-  },
-  methods: {
-    async handleGetPostDetail(id) {
-      try {
-        const data = await blogApi.getOne(id);
-        this.postDetail = data;
-      } catch (error) {
-        console.log(error);
-      }
-    },
-  },
-  mounted() {
-    const postId = this.$route.params.id;
-    this.handleGetPostDetail(postId);
-  },
+  props: ["postDetail"],
   computed: {
     markdownToHtml() {
-      return marked(this.postDetail?.content);
+      return marked(this.postDetail?.content || "");
     },
   },
   mixins: [formatDate],
@@ -42,7 +23,7 @@ export default {
           />
           <div>
             <router-link
-              :to="`/author/${postDetail.author.id}`"
+              :to="`/author/${postDetail.author?.id}`"
               class="text-purple h3"
               >{{ postDetail.author?.name }}</router-link
             >

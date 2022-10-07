@@ -25,9 +25,12 @@ export default {
             {{ item.label }}
           </router-link>
         </div>
-        <button class="bg-white px-10 py-3 cursor-pointer text-lg">
+        <router-link
+          to="/contact"
+          class="bg-white px-10 py-3 cursor-pointer text-lg"
+        >
           Subscribe
-        </button>
+        </router-link>
       </div>
       <font-awesome-icon
         icon="fa-solid fa-bars"
